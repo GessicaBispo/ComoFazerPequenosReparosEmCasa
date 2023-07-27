@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("consertoPia.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: top left;
+  font-family: "Arial", sans-serif; /* Utilizando uma fonte mais chamativa */
+
+}
+
+.info {
+  padding: 5vw;
+  margin: 3vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 1rem;
+  color: rgb(229, 229, 243);
+  /* Adicionando uma sombra para destacar o contêiner do e-book */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#titulo {
+  font-size: 1.8rem; /* Aumentando o tamanho do título para enfatizar */
+  line-height: 2.5rem;
+  text-align: center;
+  color: #007bff; /* Mudando a cor do título para azul */
+  margin-bottom: 1rem; /* Adicionando um espaçamento entre o título e o texto */
+}
+
+#titulo:hover {
+  color: orange;
+}
+
+#paragrafo {
+  font-size: 1.2rem; /* Aumentando o tamanho do texto para maior legibilidade */
+  line-height: 2.2rem;
+  text-align: justify;
+  color: #858585; /* Mudando a cor do texto para preto */
+}
+
+#tituloDoFormulario {
+  font-size: 1.8rem; /* Aumentando o tamanho do título para enfatizar */
+  line-height: 2.2rem;
+  text-align: center;
+  color: #007bff; /* Mudando a cor do título para azul */
+  margin-bottom: 1rem; /* Adicionando um espaçamento entre o título e o formulário */
+}
+
+form {
+  padding: 5vw;
+  margin: 5vw;
+  background-color: rgba(2, 2, 55, 0.9);
+  color: rgb(229, 229, 243);
+  border-radius: 1rem;
+  font-size: 1.1rem;
+  /* Adicionando uma sombra para destacar o formulário */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  width: 100%;
+  margin-left: 0vw;
+  margin-bottom: 4vw;
+}
+
+
+.mb-3 {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3rem;
+}
+
+/* Estilizar os radio buttons */
+.radio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espaçamento entre cada grupo de radio button e descrição */
+}
+
+input[type="radio"] {
+  margin-right: 10px; /* Espaçamento entre o radio button e a label */
+}
+
+.mb-3 {
+  line-height: 3rem;
+}
+
+.btn-primary:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+/* Estilize o rodapé de acordo com suas preferências */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1201px) {
+  body{
+    background-size: cover;
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  #paragrafo{
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+  .info,
+  form {
+    margin: 3vw 10vw 0vw;
+    padding: 3vw 4vw 2vw;
+    
+  }
+ 
+  
+  form{
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-bottom: 10vw;
+  }
+  #titulo, #tituloDoFormulario{
+    font-size:2.5vw;
+    margin-bottom: 1.5vw;
+    line-height: 3vw;
+
+  }
+  #tituloDoFormulario{
+    width: 30vw;
+  }
+  fieldset.mb-3{
+    line-height: 1.5vw;
+   
+    
+  }
+  
+  .form-control {
+    width: 30vw;
+    height: 2.5vw;
+    margin-left: 0vw;
+    margin-bottom: .35rem;
+    font-size:1.5vw;
+  }
+  .mb-3 {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .radio-container {
+    width: 25rem;
+  }
+  #motivacao {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+  label{
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 1200px)and (min-width: 769px)  {
+ 
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  #paragrafo{
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+  }
+  .info,
+  form {
+    margin: 3vw 10vw 0vw;
+    padding: 3vw 4vw 2vw;
+   
+  }
+  form{
+    margin-bottom: 10vw;
+  }
+  #titulo, #tituloDoFormulario{
+    font-size:2.5vw;
+    margin-bottom: 1.5vw;
+    line-height: 3vw;
+
+  }
+  #tituloDoFormulario{
+    width: 30vw;
+  }
+  #titulo{
+    min-width: 30vw;
+  }
+  fieldset.mb-3{
+    line-height: 1.5vw;
+   
+    
+  }
+  .form-control {
+    width: 30vw;
+    height: 2.5vw;
+    margin-left: 0vw;
+    margin-bottom: .35rem;
+    font-size:1.5vw;
+  }
+  .mb-3 {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3rem;
+  }
+  .radio-container {
+    width: 15rem;
+  }
+  #motivacao {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+}
+
+
+/* ................................................................................... */
+
+
+@media screen and (max-width: 768px) and (min-width: 576px)  {
+  /* Estilos para dispositivos com largura máxima de 768px */
+  #paragrafo{
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  #tituloDoFormulario {
+    margin-bottom: 3rem;
+  }
+  .form-control {
+    width: 75vw;
+    margin-left: 0vw;
+  }
+  .info,
+  form {
+    margin: 1.5vw 5vw 5vw;
+    padding: 7vw 7vw 7vw;
+  }
+  #titulo {
+    margin-bottom: 1rem;
+  }
+  
+  .radio-container {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  #motivacao {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* ................................................................................... */
+
+@media screen and (max-width: 575px) and (min-width: 321px) {
+  /* Estilos para dispositivos com largura máxima de 768px */
+  #paragrafo{
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  #tituloDoFormulario {
+    margin-bottom: 1rem;
+  }
+  .info,
+  form {
+    margin: 1.5vw 5vw 5vw;
+    padding: 7vw 7vw 7vw;
+  }
+  #titulo {
+    margin-bottom: 1rem;
+  }
+
+  .form-control {
+    width: 100%;
+    margin-left: 0vw;
+  }
+}
+
+/* ................................................................................... */
+
+/* BREAKPOINT 320 SMARTFONE!!!!!!! */
+@media screen and (max-width: 320px) {
+  /* Estilos para dispositivos com largura máxima de 320px */
+  #titulo {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  #paragrafo {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  form {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  fieldset.mb-3{
+    line-height: 1vw;
+   
+    
+  }
+  .form-control {
+    width: 100%;
+    margin-left: 0vw;
+    height: 1.5rem;
+  }
+  .col-sm-10 {
+    display: inline-flex;
+  }
+  .mb-3 {
+    line-height: 3rem;
+  }
+  #tituloDoFormulario {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.9rem;
+  }
+  #motivacao {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  footer {
+    padding: 8px;
+    font-size: 13px;
+  }
+  
+}
